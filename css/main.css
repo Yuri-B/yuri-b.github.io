@@ -1,28 +1,158 @@
-.picture {
-    width:100%;
-   height:auto;
-   margin-top:-1px;
-}
+  #yuriSite{margin:0px;padding:0px;font-family:Tahoma, Geneva, sans-serif;background-color:rgb(15,124,171);}
 
-.caption {
-  background-color:#000;
-  text-align:center;
-  font-family:sans-serif;
-  color: rgba(255,255,255,0.8);
-  padding-top:3vh;
-  padding-bottom:3vh;
-}
+  h1{width:100%;margin:0px 0px 15px 0px;font:28px/35px Tahoma, Geneva, sans-serif;font-weight:300;}
+  h2{width:100%;height:auto;margin:0px 0px 15px 0px;font:25px/35px Tahoma, Geneva, sans-serif;font-weight:300;}
+  h4{width:100%;font:14px/20px Tahoma, Geneva, sans-serif;margin:0px 0px 10px 0px;font-weight:200;}
+  .primaryHeader {text-align:center;}
+  .secondaryHeader {text-align:left;}
+  p{font:14px/20px Tahoma, Geneva, sans-serif;font-weight:200;margin:0px 0px 15px 0px;}
+  #header p, #footer p, #description p {width:500px;margin-left:auto;margin-right:auto;}
+  .mainParagraph {text-align:center;}
+  .contentParagraph {text-align:left;}
 
-.imageHolder {
-  padding:0px;
-}
+  .subText{font:9px/12px Tahoma, Geneva, sans-serif;font-weight:100;width:100%;}
 
-.container-fluid {
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width:720px;
-  width:100%;
+  #header{width:100%;position:absolute;top:0px;left:0px;background-color:rgba(15,124,171,0.3);padding:0px 20px 0px 20px;box-sizing:border-box;height:80px;color:rgba(255,255,255,0.8);}
+  #header .headerNavigation{float:right;list-style-type: none;width:auto;margin:0px;line-height:80px;}
+  #header .headerNavigation li{float:left;margin-left:12px;font-size:12px;font-weight:200;}
+  #header .headerNavigation li a{cursor:pointer;}
+  #header .headerNavigation li a.selectedPage{border-bottom:2px solid rgba(255,255,255,0.8);}
+  #header .headerNavigation li a:hover, #header .headerNavigation li a.selectedPage:hover{color:rgba(255,255,255,1);border-bottom:2px solid rgba(255,255,255,1);}
+  #header .logoElement{float:left;height:80px;width:150px;}
 
-}
+  .topSpacer{height:80px;}
+  .clearContainer{clear:both;}
 
-footer { position:absolute; bottom:0px; }
+  @media (max-width: 768px) {
+    #header{height:160px;}
+    #header .logoElement{width:100%;}
+    #header .headerNavigation{margin:0px;padding:0px;width:100%;}
+    #header .headerNavigation li{float:left;margin:0px;font-size:14px;width:25%;text-align:center;line-height:80px;}
+    .topSpacer{height:160px;}
+    #header p, #footer p, #micrositeDescription p{width:100%;margin:0px 0px 20px 0px;}
+  }
+
+  #footer{width:100%;height:auto;background-color:#0f7cab;padding:40px 20px 40px 20px;box-sizing:border-box;color:#fff;}
+
+  .contentBox{width:100%;height:auto;box-sizing:border-box;margin:0px;}
+  .contentBox.content-grey{background-color:#f5f5f5;}
+  .contentBox.content-white{background-color:#fff;}
+
+  .content{width:768px;margin-left:auto;margin-right:auto;height:auto;padding:0px;box-sizing:border-box;}
+  .content.majorContent{padding:40px 0px 40px 0px;}
+
+  .card-wrapper{width:100%;float:left;margin:0px;}
+
+  .content .content-2.description, .content .content-2.image{width:50%;box-sizing:border-box;}
+  .content-2.image{text-align:center;}
+  .content-2.image img{width:100%;max-width:400px;box-sizing:border-box;padding-left:30px;padding-right:30px;height:auto;}
+  .content-2.image img.verticalSpaced{margin-top:90px;}
+  .content .content-2.description {padding-top:100px;padding-bottom:100px;}
+  .content .content-2 {width:100%;height:auto;}
+  .content .primaryHeader, .content .contentParagraph{margin-bottom:30px;}
+
+  #iotDescription .content-2.image, #productManagement .content-2.image, #carousel-slide1 .content-2.image{float:left;}
+  #iotDescription .content-2.description, #productManagement .content-2.description, #carousel-slide1 .content-2.description{float:right;}
+
+  #powerfulCloudTools .content-2.image, #referenceProjects .content-2.image{float:right;}
+  #powerfulCloudTools .content-2.description, #iotDescription .content-2.description, #referenceProjects .content-2.description{float:left;}
+
+  @media (max-width: 768px) {
+    .content{width:100%;padding:0px 20px 0px 20px;}
+    .content.majorContent{width:100%;padding:30px 0px 30px 0px;}
+    .content.majorContent.leftPadding{width:100%;padding:30px 20px 30px 20px;}
+    .content .content-2.description {width:100%;padding-top:30px;padding-bottom:30px;height:auto;}
+    .content .content-2.image{width:100%;padding-left:0px;padding-right:0px;}
+    .content-2.image img.verticalSpaced{margin-top:30px;}
+    .content-2.image{float:left;}
+    .content .content-2 .secondaryHeader, .content .content-2 .contentParagraph{text-align:center;}
+  }
+
+  #description{background-color:rgba(15,124,171,0.3);height:auto;padding:0px 20px 40px 20px;box-sizing:border-box;color:rgba(255,255,255,0.8);}
+  #description .content{height:auto;clear:both;padding-left:0px;padding-right:0px;}
+
+  .card-4, .card-4-responsive, .card-8{box-sizing:border-box;padding:0px 4px 0px 4px;float:left;margin-bottom:15px;text-align:center;}
+  .card-4 img, .card-4-responsive img, .card-8 img{height:auto;box-sizing:border-box;margin-bottom:10px;opacity:0.8;width:100%;}
+  .card-4, .card-4-responsive{width:25%;}
+  .card-8{width:12.25%;}
+
+  .card-1lineText img{margin-bottom:5px;max-width:55px;}
+  .card-1lineText p{font:10px/14px Tahoma, Geneva, sans-serif;margin:0px;}
+
+  .card-multiLineText{height:auto;}
+  .card-multiLineText img{max-width:55px;}
+  .card-multiLineText h4{margin-bottom:0px;}
+  .card-multiLineText .subSection{box-sizing:border-box;width:100%;}
+  .card-multiLineText .subSection.subtextWithStatusIcon{text-align:right;width:auto;padding-left:16%;padding-right:16%;}
+  .card-multiLineText .statusIcon{width:10px;height:10px;float:left;background-size:100% 100%;margin-top:1px;}
+
+  .card-multiLineText .statusIcon.supported{background-image:url(//cdn2.hubspot.net/hub/654443/hubfs/Yuri-experiment/checkmark-round.png);}
+  .card-multiLineText .statusIcon.comingSoon{background-image:url(//cdn2.hubspot.net/hub/654443/hubfs/Yuri-experiment/load-circle.png);}
+  .card-multiLineText .subSection.subtextWithStatusIcon.supported{padding-left:21%;padding-right:21%;}
+  .card-multiLineText .subSection.subtextWithStatusIcon.comingSoon{padding-left:16%;padding-right:16%;}
+
+  @media (max-width: 768px) {
+    .card-8{width:25%;}
+    .card-4-responsive{width:50%;}
+    .card-multiLineText h4{font:12px/20px Tahoma, Geneva, sans-serif;}
+    .card-multiLineText img{margin-bottom:5px;}
+    .card-multiLineText .subSection.subtextWithStatusIcon{padding-left:10%;padding-right:10%;}
+  }
+
+  .cta-major{padding:14px;text-transform:uppercase;border-radius:5px;margin:40px auto 40px auto;text-align:center;box-sizing:border-box;font-size:14px;cursor:pointer;}
+  .cta-major.green{border:2px solid #fff;color:#fff;background-color:#2fc454;}
+  .cta-major.green:hover{background-color:#2fd565;}
+
+  .carousel-previous, .carousel-next{height:300px;width:5%;float:left;background-repeat:no-repeat;background-position:50% 50%;opacity:1;cursor:pointer;}
+  .carousel-previous{background-image:url("//cdn2.hubspot.net/hub/654443/hubfs/Yuri-experiment/arrow_left.svg");}
+  .carousel-next{background-image:url("//cdn2.hubspot.net/hub/654443/hubfs/Yuri-experiment/arrow_right.svg");}
+  .carousel-previous:hover, .carousel-next:hover{opacity:0.5;}
+  .carousel-slides{width:90%;float:left;}
+  .carousel-slides .content-2.description, .carousel-slides .content-2.image{padding-top:15px;padding-bottom:25px;}
+  .carousel-navigation{width:55px;margin-left:auto;margin-right:auto;height:15px;}
+  .carousel-navigation .nav-circle{width:12px;height:12px;border-radius:7px;border:1px solid #cccccc;float:left;margin-left:2px;margin-right:2px;cursor:pointer;}
+  .carousel-navigation .nav-circle:hover, .carousel-navigation .nav-circle.nav-active{border:1px solid #0f7cab;}
+
+  @media (max-width: 768px) {
+    .carousel-previous, .carousel-next{height:400px;width:10%;}
+    .carousel-slides{width:80%;}
+  }
+
+  #cesantaLogo{position:relative;left:0px;top:20px;width:100%;}
+
+  #tryFree{width:150px;}
+  #createCloud{width:210px;}
+  #hireUs{text-transform:uppercase;text-decoration:underline;}
+
+  #howItWorks, #productManagement, #caseStudies{color:#0f7cab;}
+
+  #howItWorks img{box-sizing:border-box;padding-left:10px;padding-right:10px;margin-bottom:15px;}
+  #howItWorks .infographic-content{width:17.5%;float:left;text-align:center;}
+  #howItWorks .infographic-content img{max-width:200px;width:100%;}
+  #howItWorks .infographic-arrow img{max-width:120px;width:100%;}
+  #howItWorks .infographic-arrow, #flippedArrow{width:10%;float:left;margin-top:45px;text-align:center;}
+
+  @media (max-width: 768px) {
+    #cesantaLogo{width:60%;position:relative;left:20%;}
+
+    #howItWorks .infographic-content{width:40%;}
+    #howItWorks .infographic-arrow{width:20%;}
+    #flippedArrow{width:100%;height:65px;margin-top:10px;text-align:center;}
+    #flippedArrow img{width:80px;transform:rotate(135deg);}
+    #howItWorks .card-wrapper:last-child{width:100px;height:200px;margin-left:auto;margin-right:auto;}
+  }
+
+  #productManagement{background-image:url("//cdn2.hubspot.net/hub/654443/hubfs/Yuri-experiment/features_product_rain.svg");background-repeat:no-repeat;background-position:60% 0%;background-size:15% auto;}
+  @media (max-width: 768px) {
+    #productManagement{background-image:none;}
+  }
+  #iotDescription{color:#e6786e;}
+  #powerfulCloudTools{color:#33c457;}
+  #referenceProjects{color:#ba56a1;}
+  #testimonials{color:#e6786e;}
+  #testimonials .card-4-responsive img{padding-left:20px;padding-right:20px;box-sizing:border-box;}
+  @media (max-width: 768px) {
+    #testimonials .card-4-responsive{min-height:60px;}
+  }
+  #hireUs{cursor:pointer;}
+  #hireUs:hover{color:#efefef;}
