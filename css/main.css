@@ -1,4 +1,5 @@
-  #yuriSite{margin:0px;padding:0px;font-family:Tahoma, Geneva, sans-serif;background-color:rgb(66,66,106);}
+  .yuriSite {margin:0px;padding:0px;font-family:Tahoma, Geneva, sans-serif;}
+  #homePage {background-color:rgb(66,66,106);}
 
   h1{width:100%;margin:0px 0px 15px 0px;font:28px/35px Tahoma, Geneva, sans-serif;font-weight:300;}
   h2{width:100%;height:auto;margin:0px 0px 15px 0px;font:25px/35px Tahoma, Geneva, sans-serif;font-weight:300;}
@@ -12,11 +13,12 @@
   .subText{font:9px/12px Tahoma, Geneva, sans-serif;font-weight:100;width:100%;}
 
   #header{width:100%;position:absolute;top:0px;left:0px;background-image: linear-gradient(to bottom, rgb(66,66,166) , transparent);padding:0px 20px 0px 20px;box-sizing:border-box;height:160px;color:rgba(255,255,255,0.8);}
-  #header .headerNavigation{float:right;list-style-type: none;width:auto;margin:0px;line-height:80px;}
-  #header .headerNavigation li{float:left;margin-left:12px;font-size:12px;font-weight:200;}
-  #header .headerNavigation li a{cursor:pointer;}
-  #header .headerNavigation li a.selectedPage{border-bottom:2px solid rgba(255,255,255,0.8);}
-  #header .headerNavigation li a:hover, #header .headerNavigation li a.selectedPage:hover{color:rgba(255,255,255,1);border-bottom:2px solid rgba(255,255,255,1);}
+  #header .headerNavigation{float:right;list-style-type: none;width:auto;margin:0px;}
+  #header .headerNavigation li{float:left;margin-left:12px;font-size:12px;font-weight:200;margin:60px 6px 0px 6px;}
+  #header .headerNavigation li a{cursor:pointer;color:rgba(255,255,255,0.8);}
+  #header .headerNavigation li a.selectedPage{border-bottom:2px solid rgba(255,255,255,0.8);text-decoration:none;}
+  #header .headerNavigation li a:hover, #header .headerNavigation li a.selectedPage:hover{color:rgba(255,255,255,1);border-bottom:2px solid rgba(255,255,255,1);text-decoration:none;}
+  #header .headerNavigation li a:active {text-decoration:none;}
   #header .logoElement{float:left;height:80px;width:150px;}
 
   .clearContainer{clear:both;}
@@ -24,7 +26,7 @@
   @media (max-width: 768px) {
     #header .logoElement{width:100%;}
     #header .headerNavigation{margin:0px;padding:0px;width:100%;}
-    #header .headerNavigation li{float:left;margin:0px;font-size:14px;width:25%;text-align:center;line-height:80px;}
+    #header .headerNavigation li{float:left;font-size:14px;width:25%;text-align:center;}
     .topSpacer{height:160px;}
     #header p, #footer p, #description p{width:100%;margin:0px 0px 20px 0px;}
   }
