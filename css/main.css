@@ -7,18 +7,27 @@
   .secondaryHeader {text-align:left;}
   #footer p {font-size:12px;margin: 0px 0px 0px 0px;}
   .mainParagraph {text-align:center;}
-  .contentParagraph {text-align:left;}
 
   .subText{font:9px/12px Tahoma, Geneva, sans-serif;font-weight:100;width:100%;}
 
-  #header{width:100%;position:absolute;top:0px;left:0px;background-image: linear-gradient(to bottom, white , transparent);padding:0px 20px 0px 20px;box-sizing:border-box;height:160px;color:rgba(255,255,255,0.8);}
+  #header{
+    width:100%;
+    position:fixed;
+    top:0px;
+    left:0px;
+    /*background-image: linear-gradient(to bottom, white , transparent);*/
+    padding:0px 20px 0px 20px;
+    box-sizing:border-box;
+    height:160px;
+    color:rgba(255,255,255,0.8);
+  }
   #header.homepageHeader {background-image: linear-gradient(to bottom, rgb(255, 94, 13); , transparent)}
   .navigator {width:auto;height:auto;}
   .navigationSymbol {width:50px;height:50px;}
   .navigator:not(:checked) ~ .navigationMenu {display:none;}
   .navigator:checked ~ .navigationMenu {display:block;}
 
-  .navigationMenu {position:fixed;top:0px;left:0px;width:33%;height:100%;background-color:rgb(244,255,212);box-shadow: 10px 0 20px rgba(10,10,10,0.2);}
+  .navigationMenu {position:fixed;top:0px;left:0px;width:33%;height:100%;background-color:rgb(244,255,212);box-shadow: 10px 0 20px rgba(50,50,50,0.1);}
 
   .clearContainer{clear:both;}
 
@@ -29,43 +38,44 @@
     #header p, #footer p, #description p{width:100%;margin:0px 0px 20px 0px;}
   }
 
-  #footer{width:100%;height:auto;padding:40px 20px 40px 20px;box-sizing:border-box;color:#fff;position:absolute;bottom:0px;}
-  #footer .footerLinks {float:right;margin: 0px 5px 0px 5px;}
-  #footer .footerLinks a {color: rgba(255,255,255,0.8);}
+  #footer{width:100%;height:auto;padding:40px 15% 40px 15%;box-sizing:border-box;background-color: #f9f9f9;}
+  #footer .footer-inner {width:100%;clear:both;}
+  #footer .copyright {float:left;width:auto;}
+  #footer .footerLinks {float:right;width:auto;}
+  #footer .footerLinks span {margin: 0px 5px 0px 5px;}
+  #footer .footerLinks a {color: rgba(0,0,0,0.8);}
 
-  .contentBox{width:100%;height:auto;box-sizing:border-box;margin:0px;}
-  .contentBox.content-grey{background-color:#f5f5f5;}
-  .contentBox.content-white{background-color:#fff;}
-  .contentBox p{font:14px/20px Tahoma, Geneva, sans-serif;font-weight:200;margin:0px 0px 15px 0px;}
-
-  .content{width:768px;margin-left:auto;margin-right:auto;height:auto;padding:0px;box-sizing:border-box;}
-  .content.majorContent{padding:40px 0px 40px 0px;}
-
+  .content{width:100%;margin-left:auto;margin-right:auto;height:auto;padding:0px;box-sizing:border-box;}
   .card-wrapper{width:100%;float:left;margin:0px;}
 
-  .content .content-2.description, .content .content-2.image{width:50%;box-sizing:border-box;}
-  .content-2.image{text-align:center;}
-  .content-2.image img{width:100%;max-width:400px;box-sizing:border-box;padding-left:30px;padding-right:30px;height:auto;}
-  .content-2.image img.verticalSpaced{margin-top:90px;}
-  .content .content-2.description {padding-top:100px;padding-bottom:100px;}
-  .content .content-2 {width:100%;height:auto;}
-  .content .primaryHeader, .content .contentParagraph{margin-bottom:30px;}
-
   @media (max-width: 768px) {
-    .content{width:100%;padding:0px 20px 0px 20px;}
-    .content.majorContent{width:100%;padding:30px 0px 30px 0px;}
-    .content.majorContent.leftPadding{width:100%;padding:30px 20px 30px 20px;}
-    .content .content-2.description {width:100%;padding-top:30px;padding-bottom:30px;height:auto;}
-    .content .content-2.image{width:100%;padding-left:0px;padding-right:0px;}
-    .content-2.image img.verticalSpaced{margin-top:30px;}
-    .content-2.image{float:left;}
-    .content .content-2 .secondaryHeader, .content .content-2 .contentParagraph{text-align:center;}
+    .content{width:100%;padding:0px 30px 0px 30px;}
+    .content .secondaryHeader{text-align:center;}
   }
 
-  #description{height:90%;padding:160px 0px 40px 0px;box-sizing:border-box;color:rgba(255,255,255,1);background-image:linear-gradient(to bottom, rgb(255, 94, 13);}
-  #description .content{height:auto;clear:both;padding-left:0px;padding-right:0px;}
-  #description .content .headline {float:right;width:75%;margin-top:15%;}
-  #description p {font:24px/30px Tahoma, Geneva, sans-serif;}
+  .headlineDescription{
+    width:100%;
+    height:90vh;
+    position:relative;
+    box-sizing:border-box;
+    color:rgba(255,255,255,1);
+    /*
+    background-color:rgb(181, 228, 0);
+    */
+    background:linear-gradient(63deg, rgb(181, 228, 0) 23%, transparent 23%) 14px 0,
+    linear-gradient(63deg, transparent 74%, rgb(181, 228, 0) 78%),
+    linear-gradient(63deg, transparent 34%, rgb(181, 228, 0) 38%, rgb(181, 228, 0) 58%, transparent 62%),
+    rgb(182, 230, 0);
+    background-size: 32px 96px;
+    overflow:hidden;
+  }
+  .headlineDescription .headline-right {
+    padding:0% 15% 0px 35%;
+    position:absolute;
+    bottom:120px;
+    box-sizing:border-box;
+  }
+  .headlineDescription .headline-right p {font:24px/30px Tahoma, Geneva, sans-serif;}
 
   .card-4, .card-4-responsive, .card-8{box-sizing:border-box;padding:0px 4px 0px 4px;float:left;margin-bottom:15px;text-align:center;}
   .card-4 img, .card-4-responsive img, .card-8 img{height:auto;box-sizing:border-box;margin-bottom:10px;opacity:0.8;width:100%;}
@@ -113,42 +123,3 @@
     .carousel-previous, .carousel-next{height:400px;width:10%;}
     .carousel-slides{width:80%;}
   }
-
-  #cesantaLogo{position:relative;left:0px;top:20px;width:100%;}
-
-  #tryFree{width:150px;}
-  #createCloud{width:210px;}
-  #hireUs{text-transform:uppercase;text-decoration:underline;}
-
-  #howItWorks, #productManagement, #caseStudies{color:#0f7cab;}
-
-  #howItWorks img{box-sizing:border-box;padding-left:10px;padding-right:10px;margin-bottom:15px;}
-  #howItWorks .infographic-content{width:17.5%;float:left;text-align:center;}
-  #howItWorks .infographic-content img{max-width:200px;width:100%;}
-  #howItWorks .infographic-arrow img{max-width:120px;width:100%;}
-  #howItWorks .infographic-arrow, #flippedArrow{width:10%;float:left;margin-top:45px;text-align:center;}
-
-  @media (max-width: 768px) {
-    #cesantaLogo{width:60%;position:relative;left:20%;}
-
-    #howItWorks .infographic-content{width:40%;}
-    #howItWorks .infographic-arrow{width:20%;}
-    #flippedArrow{width:100%;height:65px;margin-top:10px;text-align:center;}
-    #flippedArrow img{width:80px;transform:rotate(135deg);}
-    #howItWorks .card-wrapper:last-child{width:100px;height:200px;margin-left:auto;margin-right:auto;}
-  }
-
-  #productManagement{background-image:url("//cdn2.hubspot.net/hub/654443/hubfs/Yuri-experiment/features_product_rain.svg");background-repeat:no-repeat;background-position:60% 0%;background-size:15% auto;}
-  @media (max-width: 768px) {
-    #productManagement{background-image:none;}
-  }
-  #iotDescription{color:#e6786e;}
-  #powerfulCloudTools{color:#33c457;}
-  #referenceProjects{color:#ba56a1;}
-  #testimonials{color:#e6786e;}
-  #testimonials .card-4-responsive img{padding-left:20px;padding-right:20px;box-sizing:border-box;}
-  @media (max-width: 768px) {
-    #testimonials .card-4-responsive{min-height:60px;}
-  }
-  #hireUs{cursor:pointer;}
-  #hireUs:hover{color:#efefef;}
