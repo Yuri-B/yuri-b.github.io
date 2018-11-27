@@ -1,10 +1,10 @@
-  .yuriSite {margin:0px;padding:0px;font-family:Tahoma, Geneva, sans-serif;}
+  .yuriSite {margin:0px;padding:0px;font-family:Tahoma, Geneva, sans-serif;color:#666;}
 
-  h1{width:100%;margin:0px 0px 30px 0px;font:50px/65px Tahoma, Geneva, sans-serif;font-weight:bold;}
-  h2{width:100%;height:auto;margin:0px 0px 30px 0px;font:35px/50px Tahoma, Geneva, sans-serif;font-weight:bold;}
-  h3{width:100%;height:auto;margin:0px 0px 15px 0px;font:20px/30px Tahoma, Geneva, sans-serif;font-weight:300;}
-  h4{width:100%;font:16px/26px Tahoma, Geneva, sans-serif;margin:0px 0px 15px 0px;font-weight:bold;}
-  p {font-size:15px;}
+  h1{width:100%;margin:0px 0px 30px 0px;font:40px/55px Tahoma, Geneva, sans-serif;}
+  h2{width:100%;height:auto;margin:0px 0px 30px 0px;font:30px/45px Tahoma, Geneva, sans-serif;}
+  h3{width:100%;height:auto;margin:0px 0px 15px 0px;font:20px/30px Tahoma, Geneva, sans-serif;}
+  h4{width:100%;font:16px/26px Tahoma, Geneva, sans-serif;margin:0px 0px 15px 0px;}
+  p {font-size:15px;color:#444;}
   .primaryHeader {text-align:center;}
   .secondaryHeader {text-align:left;}
   #footer p {font-size:12px;margin: 0px 0px 0px 0px;}
@@ -26,7 +26,7 @@
   /*#header.homepageHeader {background-image: linear-gradient(to bottom, rgb(255, 94, 13) , transparent)}*/
 
   .navigationSymbol {width:auto;height:75px;}
-  .navigationSymbol .nav-rail {height:33.33%;width:100px;border-top:10px solid white;box-sizing:border-box;background-color:rgb(181, 228, 0);}
+  .navigationSymbol .nav-rail {height:33.33%;width:100px;border-top:10px solid white;box-sizing:border-box;background-color:rgb(197, 217, 232);}
 
   .navigationSymbol .nav-rail:nth-child(2) {margin-left:10px;}
   .navigationSymbol .nav-rail:nth-child(3) {margin-left:20px;}
@@ -38,17 +38,15 @@
   .navigator:not(:checked) ~ .navigationMenu  {display:none;}
   .navigator:checked ~ .navigationMenu {display:block;}
 
-  .navigationMenu {z-index:0;position:fixed;top:0px;left:0px;padding:30px;box-sizing:border-box;width:33%;height:100%;background-color:rgb(60,60,60);box-shadow: 10px 0 20px rgba(50,50,50,0.1);}
+  .navigationMenu {z-index:0;position:fixed;top:0px;left:0px;padding:30px;box-sizing:border-box;width:33%;height:100%;background-color:rgb(75,91,105);box-shadow: 10px 0 30px rgba(50,50,50,0.5);}
 
-  .navigationMenu .navigationSymbol .nav-rail {border-color: #acef00;margin-left:0px;background-color:transparent;}
+  .navigationMenu .navigationSymbol .nav-rail {border-color: #5fcec7;margin-left:0px;background-color:transparent;}
 
-  .navigationMenu ul {margin-top:120px;width:100%;padding:0px;list-style:none;}
-  .navigationMenu ul li a {color:#acef00;font-size:24px;line-height:50px;text-transform:uppercase;}
-  .navigationMenu ul li a:hover {text-decoration:none;color:#adef00;}
-  .navigationMenu ul li:nth-child(2) {margin-left:15px;}
-  .navigationMenu ul li:nth-child(3) {margin-left:30px;}
-
-  .clearContainer {clear:both;}
+  .navigationMenu ul {margin-top:60px;width:100%;padding:0px;list-style:none;}
+  .navigationMenu ul li a {color:#5fcec7;font-size:24px;line-height:50px;text-transform:uppercase;cursor:pointer;}
+  .navigationMenu ul li a:hover {text-decoration:none;color:#5fdfd8;}
+  .navigationMenu ul li:nth-child(2) {margin-left:20px;}
+  .navigationMenu ul li:nth-child(3) {margin-left:40px;}
 
   @media (max-width: 768px) {
     .navigationMenu {width:75%;}
@@ -62,9 +60,13 @@
   #footer .footerLinks span {margin: 0px 5px 0px 5px;}
   #footer .footerLinks a {color: rgba(0,0,0,0.8);}
 
-  .content{width:100%;height:auto;box-sizing:border-box;margin-bottom:60px;padding-top:60px;}
+  .content{width:100%;height:auto;box-sizing:border-box;margin-bottom:100px;padding-top:100px;}
   .content.content-left{padding-right:30%;padding-left:15%;}
   .card-wrapper{width:100%;float:left;margin:0px;}
+
+  .content h1, .content h2 {color:rgb(75,91,105);}
+  .content h3, .content h4 {color: rgba(0,0,0,0.7);}
+  .content p {color: rgba(0,0,0,0.4);}
 
   @media (max-width: 768px) {
     .content{width:100%;padding:0px 30px 0px 30px;}
@@ -73,31 +75,31 @@
 
   .headlineDescription{
     width:100%;
-    height:70vh;
+    height:65vh;
     position:relative;
     box-sizing:border-box;
-    color:rgba(255,255,255,1);
-    /*
-    background-color:rgb(181, 228, 0);
-    */
-    background:linear-gradient(63deg, rgb(181, 228, 0) 23%, transparent 23%) 14px 0,
+    color:rgba(255,255,255,0.9);
+    background:linear-gradient(45deg,rgb(197, 217, 232),rgb(197, 217, 232),rgb(170,209,239));
+
+    /*background:linear-gradient(63deg, rgb(181, 228, 0) 23%, transparent 23%) 14px 0,
     linear-gradient(63deg, transparent 74%, rgb(181, 228, 0) 78%),
     linear-gradient(63deg, transparent 34%, rgb(181, 228, 0) 38%, rgb(181, 228, 0) 58%, transparent 62%),
     rgb(182, 230, 0);
-    background-size: 32px 96px;
+    background-size: 32px 96px;*/
     overflow:hidden;
   }
+  .headlineDescription h1 {color:rgba(255,255,255,0.8);}
   .headlineDescription .headline-right {
     padding:0% 15% 0px 40%;
     position:absolute;
-    bottom:60px;
+    bottom:100px;
     box-sizing:border-box;
   }
 
   ul.multilineList {list-style:none;margin:0px;padding:0px;}
-  ul.multilineList li {font-size:20px;margin-bottom:30px;}
-  ul.multilineList .listHeader {width:auto;}
-  ul.multilineList .listHeader .mainTitle {text-transform: capitalize;font-weight:bold;}
+  ul.multilineList li {font-size:20px;line-height:28px;margin-bottom:30px;}
+  ul.multilineList h4.listHeader {width:auto;}
+  ul.multilineList .listHeader .mainTitle {text-transform: capitalize;border:1px solid rgba(197,217,232,1);border-radius:5px;padding:5px;}
   ul.multilineList .listBody p {margin-bottom:0px;}
 
   @media (max-width: 768px) {
