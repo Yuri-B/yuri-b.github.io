@@ -12,6 +12,8 @@
 
   .subText{font:9px/12px Tahoma, Geneva, sans-serif;font-weight:100;width:100%;}
 
+  button.major {color:white;width:250px;margin-left:auto;margin-right:auto;padding:10px;border-radius:5px;background-color:rgb(170,209,239);border:0px solid transparent;}
+
   #header{
     width:100%;
     position:fixed;
@@ -59,6 +61,7 @@
   #footer .footerLinks {float:right;width:auto;}
   #footer .footerLinks span {margin: 0px 5px 0px 5px;}
   #footer .footerLinks a {color: rgba(0,0,0,0.8);}
+  #footer .footerHighlight {color:rgba(0,0,0,0.3);}
 
   .content{width:100%;height:auto;box-sizing:border-box;margin-bottom:100px;padding-top:100px;}
   .content.content-left{padding-right:30%;padding-left:15%;}
@@ -67,6 +70,7 @@
   .content h1, .content h2 {color:rgb(75,91,105);}
   .content h3, .content h4 {color: rgba(0,0,0,0.7);}
   .content p {color: rgba(0,0,0,0.4);}
+
 
   @media (max-width: 768px) {
     .content{width:100%;padding:0px 30px 0px 30px;}
@@ -95,6 +99,7 @@
     bottom:100px;
     box-sizing:border-box;
   }
+  .headlineDescription .highlight {color:rgba(255,255,255,1);font-weight:bold;}
 
   ul.multilineList {list-style:none;margin:0px;padding:0px;}
   ul.multilineList li {font-size:20px;line-height:28px;margin-bottom:30px;}
