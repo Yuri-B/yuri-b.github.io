@@ -13,6 +13,7 @@
   .subText{font:9px/12px Tahoma, Geneva, sans-serif;font-weight:100;width:100%;}
 
   button.major {color:white;width:250px;margin-left:auto;margin-right:auto;padding:10px;border-radius:5px;background-color:rgb(170,209,239);border:0px solid transparent;}
+  button.minor {color:rgb(170,209,239);width:150px;margin-left:auto;margin-right:auto;padding:10px;border-radius:5px;background-color:transparent;border:2px solid rgb(170,209,239);}
 
   #header{
     width:100%;
@@ -63,9 +64,11 @@
   #footer .footerLinks a {color: rgba(0,0,0,0.8);}
   #footer .footerHighlight {color:rgba(0,0,0,0.3);}
 
-  .content{width:100%;height:auto;box-sizing:border-box;margin-bottom:100px;padding-top:100px;}
-  .content.content-left{padding-right:30%;padding-left:15%;}
-  .card-wrapper{width:100%;float:left;margin:0px;}
+  .content{padding-left:15%;padding-right:15%;width:100%;height:auto;box-sizing:border-box;margin-bottom:100px;padding-top:100px;}
+  .content.content-left{padding-right:40%;}
+  .content.portfolioPiece {padding-top:30px;margin-bottom:30px;box-sizing:border-box;clear:both;}
+  .content.portfolioPiece .description {float:left;width:50%;}
+  .content.portfolioPiece .photo {float:right;width:50%;}
 
   .content h1, .content h2 {color:rgb(75,91,105);}
   .content h3, .content h4 {color: rgba(0,0,0,0.7);}
