@@ -1,8 +1,10 @@
   .yuriSite {margin:0px;padding:0px;font-family:Tahoma, Geneva, sans-serif;}
 
-  h1{width:100%;margin:0px 0px 15px 0px;font:28px/35px Tahoma, Geneva, sans-serif;font-weight:bold;}
-  h2{width:100%;height:auto;margin:0px 0px 15px 0px;font:25px/35px Tahoma, Geneva, sans-serif;font-weight:300;}
-  h4{width:100%;font:14px/20px Tahoma, Geneva, sans-serif;margin:0px 0px 10px 0px;font-weight:bold;}
+  h1{width:100%;margin:0px 0px 30px 0px;font:50px/65px Tahoma, Geneva, sans-serif;font-weight:bold;}
+  h2{width:100%;height:auto;margin:0px 0px 30px 0px;font:35px/50px Tahoma, Geneva, sans-serif;font-weight:bold;}
+  h3{width:100%;height:auto;margin:0px 0px 15px 0px;font:20px/30px Tahoma, Geneva, sans-serif;font-weight:300;}
+  h4{width:100%;font:16px/26px Tahoma, Geneva, sans-serif;margin:0px 0px 15px 0px;font-weight:bold;}
+  p {font-size:15px;}
   .primaryHeader {text-align:center;}
   .secondaryHeader {text-align:left;}
   #footer p {font-size:12px;margin: 0px 0px 0px 0px;}
@@ -60,8 +62,8 @@
   #footer .footerLinks span {margin: 0px 5px 0px 5px;}
   #footer .footerLinks a {color: rgba(0,0,0,0.8);}
 
-  .content{width:100%;height:auto;box-sizing:border-box;}
-  .content.content-left{padding:30px 35% 30px 15%}
+  .content{width:100%;height:auto;box-sizing:border-box;margin-bottom:60px;padding-top:60px;}
+  .content.content-left{padding-right:30%;padding-left:15%;}
   .card-wrapper{width:100%;float:left;margin:0px;}
 
   @media (max-width: 768px) {
@@ -71,7 +73,7 @@
 
   .headlineDescription{
     width:100%;
-    height:90vh;
+    height:70vh;
     position:relative;
     box-sizing:border-box;
     color:rgba(255,255,255,1);
@@ -86,15 +88,17 @@
     overflow:hidden;
   }
   .headlineDescription .headline-right {
-    padding:0% 15% 0px 35%;
+    padding:0% 15% 0px 40%;
     position:absolute;
-    bottom:120px;
+    bottom:60px;
     box-sizing:border-box;
   }
-  .headlineDescription .headline-right p {font:24px/30px Tahoma, Geneva, sans-serif;}
 
-  ul.multilineList {list-style:none;}
-  ul.multilineList li {list-style:none;}
+  ul.multilineList {list-style:none;margin:0px;padding:0px;}
+  ul.multilineList li {font-size:20px;margin-bottom:30px;}
+  ul.multilineList .listHeader {width:auto;}
+  ul.multilineList .listHeader .mainTitle {text-transform: capitalize;font-weight:bold;}
+  ul.multilineList .listBody p {margin-bottom:0px;}
 
   @media (max-width: 768px) {
     .carousel-previous, .carousel-next{height:400px;width:10%;}
