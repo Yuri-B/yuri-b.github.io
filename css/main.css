@@ -8,12 +8,12 @@
   .primaryHeader {text-align:center;}
   .secondaryHeader {text-align:left;}
   #footer p {font-size:12px;margin: 0px 0px 0px 0px;}
-  .mainParagraph {text-align:center;}
+  .headlineParagraph {margin-bottom:30px;}
 
   .subText{font:9px/12px Tahoma, Geneva, sans-serif;font-weight:100;width:100%;}
 
-  button.major {color:white;width:250px;margin-left:auto;margin-right:auto;padding:10px;border-radius:5px;background-color:rgb(170,209,239);border:0px solid transparent;}
-  button.minor {color:rgb(170,209,239);width:150px;margin-left:auto;margin-right:auto;padding:10px;border-radius:5px;background-color:transparent;border:2px solid rgb(170,209,239);}
+  button.major {color:white;width:250px;padding:10px;border-radius:5px;background-color:rgb(61,177,234);border:0px solid transparent;}
+  button.minor {color:rgb(170,209,239);width:150px;padding:10px;border-radius:5px;background-color:transparent;border:2px solid rgb(170,209,239);}
 
   #header{
     width:100%;
@@ -64,7 +64,8 @@
   #footer .footerLinks a {color: rgba(0,0,0,0.8);}
   #footer .footerHighlight {color:rgba(0,0,0,0.3);}
 
-  .content{padding-left:15%;padding-right:15%;width:100%;height:auto;box-sizing:border-box;margin-bottom:100px;padding-top:100px;}
+  .content{padding-left:15%;padding-right:15%;width:100%;height:auto;box-sizing:border-box;margin-bottom:100px;padding-top:100px;clear:both;}
+  .content.minor {margin-bottom:60px;}
   .content.content-left{padding-right:40%;}
   .content.portfolioPiece {padding-top:30px;margin-bottom:30px;box-sizing:border-box;clear:both;}
   .content.portfolioPiece .description {float:left;width:50%;}
@@ -105,8 +106,8 @@
   .headlineDescription .highlight {color:rgba(255,255,255,1);font-weight:bold;}
 
   ul.multilineList {list-style:none;margin:0px;padding:0px;}
-  ul.multilineList li {font-size:20px;line-height:28px;margin-bottom:30px;}
-  ul.multilineList h4.listHeader {width:auto;}
+  ul.multilineList li {font-size:20px;line-height:24px;margin-bottom:30px;}
+  ul.multilineList h4.listHeader {width:auto;color:rgb(106,156,195);}
   ul.multilineList .listHeader .mainTitle {text-transform: capitalize;border:1px solid rgba(197,217,232,1);border-radius:5px;padding:5px;}
   ul.multilineList .listBody p {margin-bottom:0px;}
 
