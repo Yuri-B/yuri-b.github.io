@@ -67,9 +67,18 @@
   .content{padding-left:15%;padding-right:15%;width:100%;height:auto;box-sizing:border-box;margin-bottom:100px;padding-top:100px;clear:both;}
   .content.minor {margin-bottom:60px;}
   .content.content-left{padding-right:40%;}
-  .content.portfolioPiece {padding-top:30px;margin-bottom:30px;box-sizing:border-box;clear:both;}
-  .content.portfolioPiece .description {float:left;width:50%;}
-  .content.portfolioPiece .photo {float:right;width:50%;}
+  .content.portfolioPiece {
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-bottom:30px;
+    box-sizing:border-box;
+    height:200px;
+    background:linear-gradient(45deg,#fafafa,#fafafa,#fcfcfc);
+  }
+  .content.portfolioPiece .description {padding-top:20px;padding-bottom:20px;width:50%;box-sizing:border-box;float:left;height:100%;position:relative;}
+  .content.portfolioPiece .description .navButton {position:absolute;bottom:20px;}
+  .content.portfolioPiece .photo {width:50%;height:100%;float:right;}
+  .content.portfolioPiece .photo img {width:320px;height:200px;float:right;}
 
   .content h1, .content h2 {color:rgb(75,91,105);}
   .content h3, .content h4 {color: rgba(0,0,0,0.7);}
