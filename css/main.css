@@ -12,6 +12,7 @@
 
   .subText{font:9px/12px Tahoma, Geneva, sans-serif;font-weight:100;width:100%;}
 
+  button {margin-bottom:30px;text-transform:uppercase;}
   button.major {color:white;width:250px;padding:10px;border-radius:5px;background-color:rgb(61,177,234);border:0px solid transparent;}
   button.minor {color:rgb(170,209,239);width:150px;padding:10px;border-radius:5px;background-color:transparent;border:2px solid rgb(170,209,239);}
 
@@ -114,11 +115,12 @@
   }
   .headlineDescription .highlight {color:rgba(255,255,255,1);font-weight:bold;}
 
-  ul.multilineList {list-style:none;margin:0px;padding:0px;}
+  ul.multilineList {list-style:none;padding:0px 0px 30px 30px;}
   ul.multilineList li {font-size:20px;line-height:24px;margin-bottom:30px;}
-  ul.multilineList h4.listHeader {width:auto;color:rgb(106,156,195);}
-  ul.multilineList .listHeader .mainTitle {text-transform: capitalize;border:1px solid rgba(197,217,232,1);border-radius:5px;padding:5px;}
-  ul.multilineList .listBody p {margin-bottom:0px;}
+  ul.multilineList span.listHeader {font-size:16px;line-height:26px;color:rgba(0,0,40,0.6);}
+  ul.multilineList .listHeader .mainTitle {text-transform: capitalize;font-weight:bold;}
+  ul.multilineList p.listBody{margin: 0px 0px 0px 0px;}
+  ul.multilineList.topBorder {border-top: 1px solid #444;}
 
   @media (max-width: 768px) {
     .carousel-previous, .carousel-next{height:400px;width:10%;}
