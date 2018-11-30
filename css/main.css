@@ -82,11 +82,15 @@
     box-sizing:border-box;
     height:300px;
   }
+  .content.portfolioPiece.high {
+    height:600px;
+  }
   .content.portfolioPiece.greyBG {background:linear-gradient(45deg,#fafafa,#fafafa,#ffffff);;}
   .content.portfolioPiece .description {padding:60px 30px 60px 0px;width:50%;box-sizing:border-box;float:left;height:100%;position:relative;}
   .content.portfolioPiece .description .navButton {position:absolute;bottom:60px;}
   .content.portfolioPiece .photo {width:50%;height:100%;float:left;}
   .content.portfolioPiece .photo img {width:100%;height:300px;opacity:0.92;object-fit:cover;}
+  .content.portfolioPiece.high .photo img {height:600px;}
   .content.portfolioPiece button {margin-bottom:0px;}
 
   .presentationPic {width:100%;height:70vh;}
@@ -94,7 +98,6 @@
   .content h1, .content h2 {color:rgb(75,91,105);}
   .content h3, .content h4 {color: rgba(0,0,0,0.7);}
   .content p {color: rgba(0,0,0,0.4);}
-
 
   @media (max-width: 768px) {
     .content{width:100%;padding:0px 30px 0px 30px;}
