@@ -90,6 +90,7 @@
   .content.portfolioPiece .description .navButton {position:absolute;bottom:60px;}
   .content.portfolioPiece .photo {width:50%;height:100%;float:left;}
   .content.portfolioPiece .photo img {width:100%;height:300px;opacity:0.92;object-fit:cover;}
+  .content.portfolioPiece .photo img.no-stretch {object-fit:contain;}
   .content.portfolioPiece.high .photo img {height:600px;}
   .content.portfolioPiece button {margin-bottom:0px;}
 
