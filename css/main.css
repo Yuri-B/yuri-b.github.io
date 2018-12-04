@@ -31,7 +31,8 @@
     height:100px;
     color:rgba(255,255,255,0.8);
   }
-  /*#header.homepageHeader {background-image: linear-gradient(to bottom, rgb(255, 94, 13) , transparent)}*/
+  #header {background-image: linear-gradient(to bottom, rgb(255, 255, 255) , transparent)}
+  #homePage #header {background-image: none;}
 
   .navigationSymbol {width:auto;height:auto;}
   .navigationSymbol .nav-rail {height:15px;width:120px;color:rgb(197, 217, 232);margin-bottom:15px;}
