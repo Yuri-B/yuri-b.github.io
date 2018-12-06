@@ -74,8 +74,9 @@
   #footer .footer-inner {width:100%;clear:both;}
   #footer .copyright {float:left;width:auto;}
   #footer .footerLinks {float:right;width:auto;}
-  #footer .footerLinks span {margin: 0px 5px 0px 5px;}
+  #footer .footerLinks img {margin: 0px 5px 0px 5px;width:48px;height:48px;}
   #footer .footerLinks a {color: rgba(0,0,0,0.8);}
+  #footer .footerLinks a:hover {text-decoration: none;filter:brightness(120%);}
   #footer .footerHighlight {color:rgba(0,0,0,0.3);}
 
   .content{padding-left:15%;padding-right:15%;width:100%;height:auto;box-sizing:border-box;margin-bottom:100px;clear:both;font-family:Tahoma, Geneva, sans-serif;}
