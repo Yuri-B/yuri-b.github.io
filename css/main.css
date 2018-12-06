@@ -70,12 +70,13 @@
     #header p, #footer p, #description p{width:100%;margin:0px 0px 20px 0px;}
   }
 
-  #footer{width:100%;height:auto;padding:40px 15% 40px 15%;box-sizing:border-box;background-color: #f9f9f9;font-family:Tahoma, Geneva, sans-serif;}
+  #footer{width:100%;height:120px;padding:40px 15% 40px 15%;box-sizing:border-box;background-color: #f9f9f9;font-family:Tahoma, Geneva, sans-serif;}
   #footer .footer-inner {width:100%;clear:both;}
-  #footer .copyright {float:left;width:auto;}
+  #footer .copyright {float:left;width:auto;line-height:48px;}
   #footer .footerLinks {float:right;width:auto;}
-  #footer .footerLinks img {margin: 0px 5px 0px 5px;width:48px;height:48px;}
-  #footer .footerLinks a {color: rgba(0,0,0,0.8);}
+  #footer .footerLinks a {color: rgba(0,0,0,0.8);text-decoration: none;margin: 0px 5px 0px 5px;float:left;}
+  #footer .footerLinks div {width:48px;height:48px;box-sizing:border-box;padding:9px;}
+  #footer .footerLinks img {width:auto;height:100%;}
   #footer .footerLinks a:hover {text-decoration: none;filter:brightness(120%);}
   #footer .footerHighlight {color:rgba(0,0,0,0.3);}
 
@@ -160,7 +161,7 @@
     .content .secondaryHeader{text-align:center;}
     .content.minor {margin-bottom:30px;}
     .content.first {padding-top:160px;}
-    #footer {padding:40px 30px 40px 30px;height:200px;}
+    #footer {padding:40px 30px 40px 30px;}
     button.major, button.minor {width:100%;}
     ul.multilineList {padding: 0px 0px 30px 0px;}
     #footer .copyright {float:left;width:100%;clear:both;text-align:center;margin-bottom:30px;}
