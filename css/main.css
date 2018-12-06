@@ -34,7 +34,7 @@
   #header {background-image: linear-gradient(to bottom, rgb(255, 255, 255) , transparent)}
   #homePage #header {background-image: none;}
 
-  .navigationSymbol {width:auto;height:auto;}
+  .navigationSymbol {width:auto;height:auto;float:left;}
   .navigationSymbol .nav-rail {height:15px;width:120px;color:rgb(197, 217, 232);margin-bottom:15px;}
   .navigationSymbol .nav-rail .bar {width: 80px;background-color:rgb(197, 217, 232);height:15px;float:left;}
   .navigationSymbol .nav-rail span {line-height:15px;font-size:12px;margin-left:5px;text-transform:uppercase;}
@@ -55,11 +55,13 @@
 
   .navigationMenu .navigationSymbol .nav-rail {background-color: #5fcec7;margin-left:0px;}
 
-  .navigationMenu ul {margin-top:60px;width:100%;padding:0px;list-style:none;}
+  .navigationMenu ul {margin-top:60px;width:100%;padding:0px;list-style:none;float:left;}
   .navigationMenu ul li a {color:#5fcec7;font-size:24px;line-height:50px;text-transform:uppercase;cursor:pointer;text-decoration:none;}
   .navigationMenu ul li a:hover {color:#5faca5;}
-  .navigationMenu ul li a.currentPage {margin-left:30px;}
+  .navigationMenu ul li a.currentPage {margin-left:30px; }
+  .navigationMenu ul li a.sub-list {margin-left: 50px;font-size:20px; }
 
+  .closeArticle {width:80px;height:80px;float:right;}
 
   @media (max-width: 768px) {
     .navigationMenu {width:100%;}
