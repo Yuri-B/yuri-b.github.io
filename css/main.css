@@ -58,23 +58,30 @@
   .navigator:checked ~ .navigationMenu {display:block;}
 
   .navigationMenu {z-index:0;position:fixed;top:0px;left:0px;width:100%;height:100%;font-family:Tahoma, Geneva, sans-serif;}
-  .navigationMenu .navigationMain {width:35%;height:100%;box-sizing:border-box;background-color:rgb(75,91,105);padding:30px;box-shadow: 10px 0 30px rgba(50,50,50,0.5);float:left;}
-  .navigationMenu .navigationOuter {width:65%;height:100%;background-color:rgba(0,0,0,0.3);float:right;}
+  .navigationMenu .navigationMain {width:75%;height:100%;box-sizing:border-box;background-color:rgb(75,91,105);padding:30px;box-shadow: 30px 0 0px rgba(50,50,50,0.2);float:left;}
+  .navigationMenu .navigationOuter {width:25%;height:100%;background-color:rgba(0,0,0,0.3);float:right;}
 
   .navigationMenu .navigationSymbol .nav-rail {background-color: #5fcec7;margin-left:0px;}
+  .navigationMenu .navigationSymbol .nav-symbol {width:80px;height:80px;}
+  .navigationMenu .navigationSymbol .nav-symbol img:hover {filter: brightness(120%);}
 
-  .navigationMenu ul {margin-top:60px;width:100%;padding:0px;list-style:none;float:left;}
-  .navigationMenu ul li a {color:#5fcec7;font-size:24px;line-height:50px;text-transform:uppercase;cursor:pointer;text-decoration:none;}
-  .navigationMenu ul li a:hover {color:#5faca5;}
-  .navigationMenu ul li a.currentPage {margin-left:30px; }
+  .navigationMenu ul {margin-top:120px;width:100%;padding:0px;list-style:none;float:left;}
+  .navigationMenu ul li a {color:#5fcec7;font-size:35px;line-height:70px;text-transform:uppercase;cursor:pointer;text-decoration:none;}
+  .navigationMenu ul li a:hover {color:#67bbec;text-decoration:none;}
+  .navigationMenu ul li a.currentPage {margin-left:30px;font-size:45px;color:#67bbec;}
   .navigationMenu ul li a.sub-list {margin-left: 50px;font-size:20px; }
 
-  .closeArticle {width:80px;height:80px;float:right;}
+  .desktopMenuNav ul {list-style:none;margin:0px;}
+  .desktopMenuNav ul li {float:left;margin-right:20px;}
+  .desktopMenuNav ul li a {text-transform:uppercase;text-decoration:none;line-height:60px;font-size:25px;vertical-align:middle;}
+  .desktopMenuNav ul li a.currentPage {color:#67bbec;}
+
+  .closeArticle {width:80px;height:80px;float:right;padding:15px;box-sizing:border-box;}
+  .closeArticle img {width:100%;height:100%;}
+  .closeArticle img:hover {filter:brightness(120%);}
 
   @media (max-width: 768px) {
     .navigationMenu {width:100%;}
-    .navigationMenu .navigationMain {width:75%;}
-    .navigationMenu .navigationOuter {width:25%;}
     #header p, #footer p, #description p{width:100%;margin:0px 0px 20px 0px;}
   }
 
