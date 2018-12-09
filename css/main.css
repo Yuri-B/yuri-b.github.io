@@ -21,10 +21,15 @@
   .subText{font:9px/12px Tahoma, Geneva, sans-serif;font-weight:100;width:100%;}
 
   button {margin-bottom:30px;text-transform:uppercase;outline:none;font-size:15px;cursor:pointer;}
-  button.major {color:white;width:250px;padding:10px;border-radius:5px;background-color:rgb(100,130,200);border:0px solid transparent;}
+  button.major {color:white;width:250px;padding:10px;border-radius:5px;background-color:#352154;border:0px solid transparent;}
   button.major:not(:disabled):hover {box-shadow: inset 3px 3px 0px white;text-shadow: 3px 3px white;color:transparent;text-decoration:none;}
-  button.minor {color:rgb(100,130,200);width:150px;padding:10px;border-radius:5px;background-color:transparent;border:1px solid rgb(100,130,200);}
-  button.minor:not(:disabled):hover {box-shadow: inset 3px 3px 0px rgb(100,130,200);text-shadow: 3px 3px rgb(100,130,200);color:transparent;text-decoration:none;}
+
+  button.minor {color:#352154;width:150px;padding:10px;border-radius:5px;background-color:transparent;border:1px solid #352154;}
+  button.minor:not(:disabled):hover {box-shadow: inset 3px 3px 0px #352154;text-shadow: 3px 3px #352154;color:transparent;text-decoration:none;}
+  button.minor.white {color:rgb(255,255,255);width:150px;padding:10px;border-radius:5px;background-color:transparent;border:1px solid rgb(255,255,255);}
+  button.minor.white:not(:disabled):hover {box-shadow: inset 3px 3px 0px rgb(255,255,255);text-shadow: 3px 3px rgb(255,255,255);color:transparent;text-decoration:none;}
+
+
   button:disabled {color:rgba(0,0,0,0.2);border:1px solid rgba(0,0,0,0.2);}
   button:active {outline:none;}
 
@@ -109,25 +114,26 @@
   .content .content-left {padding-right:40%;}
   .content .content-right {padding-left:40%;}
 
-  .content a {color:#352154;text-decoration:none;border-bottom: 1px solid transparent;}
-  .content a:hover {filter:brightness(120%);border-bottom: 1px solid #352154;text-decoration:none;}
+  .content a {color:orange;text-decoration:none;border-bottom: 1px solid transparent;}
+  .content a:hover {border-bottom: 1px solid #6822d4;text-decoration:none;}
 
   .content.portfolioPiece {
     padding-top:0px;
     padding-bottom:0px;
     margin-bottom:30px;
     box-sizing:border-box;
-    height:30vh;
+    height:auto;
+    overflow:hidden;
   }
   .content.portfolioPiece.high {
     height:60vh;
   }
-  .content.portfolioPiece.greyBG {background:linear-gradient(45deg,#fafafa,#fafafa,#ffffff);;}
+  .content.portfolioPiece.greyBG {background:linear-gradient(45deg,#fafafa,#fafafa,#ffffff);}
   .content.portfolioPiece .description {padding:60px 30px 60px 0px;width:50%;box-sizing:border-box;float:left;height:100%;position:relative;}
   .content.portfolioPiece .description .navButton {position:absolute;bottom:60px;}
   .content.portfolioPiece .description .navButton:hover {text-decoration:none;}
-  .content.portfolioPiece .photo {width:50%;height:100%;float:left;}
-  .content.portfolioPiece .photo.fullWidth {width:100%;height:100%;}
+  .content.portfolioPiece .photo {width:50%;float:left;}
+  .content.portfolioPiece .photo.fullWidth {width:100%;}
   .content.portfolioPiece .photo img {width:100%;height:300px;opacity:0.92;object-fit:cover;}
   .content.portfolioPiece .photo img.no-stretch {object-fit:contain;}
   .content.portfolioPiece.high .photo img {height:600px;}
