@@ -115,6 +115,7 @@
   .content .content-right {padding-left:40%;}
 
   .content .half-width-inner.picture {overflow:hidden;height:45vh;}
+  .content .half-width-inner.picture.high {height:80vh;}
   .content .half-width-inner:nth-child(1).picture {padding-right:2%;}
   .content .half-width-inner:nth-child(2).picture {padding-left:2%;}
   .content .half-width-inner.picture img {height:auto;width:100%;object-fit:cover;object-position: 50% 50%;}
@@ -132,9 +133,6 @@
     height:40vh;
     clear:both;
   }
-  .content.portfolioPiece.high {
-    height:80vh;
-  }
   .content.portfolioPiece.greyBG {background:linear-gradient(45deg,#fafafa,#fafafa,#ffffff);}
   .content.portfolioPiece .description {padding:60px 30px 60px 0px;width:50%;box-sizing:border-box;float:left;height:100%;position:relative;}
   .content.portfolioPiece .description .navButton {position:absolute;bottom:60px;}
@@ -147,6 +145,7 @@
   .content.portfolioPiece button {margin-bottom:0px;}
 
   .presentationPic {width:50%;height:40vh;margin-left:25%;}
+  img.presentationPic {object-fit:contain;}
 
   .content h1, .content h2 {opacity: 1;}
   .content h3, .content h4 {opacity: 0.8;}
