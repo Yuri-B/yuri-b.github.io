@@ -42,9 +42,14 @@
   #header {background-image: linear-gradient(to bottom, rgb(255, 255, 255) , transparent)}
   #homePage #header {background-image: none;}
 
+  .background-purple {background-color:#352154;}
+  .text-purple {color:#352154;}
+  .background-orange {background-color:#ff4900;}
+  .text-orange {color:#ff4900;}
+
   .navigationSymbol {width:auto;height:auto;float:left;}
-  .navigationSymbol .nav-rail {height:15px;width:120px;color:rgb(197, 217, 232);margin-bottom:15px;}
-  .navigationSymbol .nav-rail .bar {width: 80px;background-color:rgb(197, 217, 232);height:15px;float:left;}
+  .navigationSymbol .nav-rail {height:15px;width:120px;margin-bottom:15px;}
+  .navigationSymbol .nav-rail .bar {width: 80px;background-color:white;box-shadow: -4px 4px 0px #ff4900;height:15px;float:left;}
   .navigationSymbol .nav-rail span {line-height:15px;font-size:12px;margin-left:5px;text-transform:uppercase;}
 
   .navigationSymbol .nav-rail:nth-child(2) {margin-left:10px;}
@@ -58,10 +63,9 @@
   .navigator:checked ~ .navigationMenu {display:block;}
 
   .navigationMenu {z-index:0;position:fixed;top:0px;left:0px;width:100%;height:100%;font-family:Tahoma, Geneva, sans-serif;}
-  .navigationMenu .navigationMain {width:75%;height:100%;box-sizing:border-box;background-color:rgb(75,91,105);padding:30px;box-shadow: 30px 0 0px rgba(50,50,50,0.2);float:left;}
+  .navigationMenu .navigationMain {width:75%;height:100%;box-sizing:border-box;background-color:#482b75;padding:30px;box-shadow: 30px 0 0px rgba(50,50,50,0.2);float:left;}
   .navigationMenu .navigationOuter {width:25%;height:100%;background-color:rgba(0,0,0,0.3);float:right;}
 
-  .navigationMenu .navigationSymbol .nav-rail {background-color: #5fcec7;margin-left:0px;}
   .navigationMenu .navigationSymbol .nav-symbol {width:80px;height:80px;}
   .navigationMenu .navigationSymbol .nav-symbol img:hover {filter: brightness(120%);}
 
@@ -71,10 +75,10 @@
   .navigationMenu ul li a.currentPage {margin-left:30px;font-size:45px;color:#67bbec;}
   .navigationMenu ul li a.sub-list {margin-left: 50px;font-size:20px; }
 
-  .desktopMenuNav ul {list-style:none;margin:0px;}
+  .desktopMenuNav ul {list-style:none;margin:0px;float:right;}
   .desktopMenuNav ul li {float:left;margin-right:20px;}
-  .desktopMenuNav ul li a {text-transform:uppercase;text-decoration:none;line-height:60px;font-size:25px;vertical-align:middle;}
-  .desktopMenuNav ul li a.currentPage {color:#67bbec;}
+  .desktopMenuNav ul li a {text-transform:uppercase;text-decoration:none;line-height:60px;font-size:25px;vertical-align:middle;color:#999;}
+  .desktopMenuNav ul li a.currentPage {color:#ff4900;}
 
   .closeArticle {width:80px;height:80px;float:right;padding:15px;box-sizing:border-box;}
   .closeArticle img {width:100%;height:100%;}
@@ -105,8 +109,8 @@
   .content .content-left {padding-right:40%;}
   .content .content-right {padding-left:40%;}
 
-  .content a {color:rgb(155, 200, 220);text-decoration:none;border-bottom: 1px solid transparent;}
-  .content a:hover {color:rgb(150, 170, 190);border-bottom: 1px solid rgb(150, 170, 190);text-decoration:none;}
+  .content a {color:#352154;text-decoration:none;border-bottom: 1px solid transparent;}
+  .content a:hover {filter:brightness(120%);border-bottom: 1px solid #352154;text-decoration:none;}
 
   .content.portfolioPiece {
     padding-top:0px;
@@ -131,9 +135,9 @@
 
   .presentationPic {width:100%;height:70vh;}
 
-  .content h1, .content h2 {color:rgb(100,130,200);}
-  .content h3, .content h4 {color: rgba(0,0,0,0.7);}
-  .content p {color: rgba(0,0,0,0.5);margin-bottom:15px;}
+  .content h1, .content h2 {opacity: 1;}
+  .content h3, .content h4 {opacity: 0.8;}
+  .content p {opacity:0.7;margin-bottom:15px;}
   .content p.minor {color: rgba(0,0,0,0.3);}
 
   .headlineDescription{
@@ -153,8 +157,9 @@
   }
   .content.headlineDescription {margin-bottom:0px;}
   .headlineDescription .half-width-inner {padding-top: 30vh;height:80vh;}
-  .headlineDescription h1 {color:rgb(100, 130, 200);}
-  .headlineDescription .highlight {color:rgb(200, 100, 100);font-weight:bold;}
+  .headlineDescription h1 {color:white;}
+  .headlineDescription h2, .headlineDescription h3, .headlineDescription h4, .headlineDescription p{color:rgba(255,255,255,0.8);}
+  .headlineDescription .highlight {font-weight:bold;}
 
   ul.multilineList {list-style:none;padding:0px 0px 30px 30px;font-family:Tahoma, Geneva, sans-serif;}
   ul.multilineList li {margin-bottom:30px;}
