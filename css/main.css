@@ -119,6 +119,7 @@
   .content .half-width-inner:nth-child(1).picture {padding-right:2%;}
   .content .half-width-inner:nth-child(2).picture {padding-left:2%;}
   .content .half-width-inner.picture img {height:auto;width:100%;object-fit:cover;object-position: 50% 50%;}
+  .content .half-width-inner.picture.fitHeight img {height:100%;width:auto;object-fit:cover;object-position: 50% 50%;}
 
   .content a {color:#ff00d0;text-decoration:none;border-bottom: 1px solid transparent;}
   .content a:hover {border-bottom: 1px solid #6822d4;text-decoration:none;}
