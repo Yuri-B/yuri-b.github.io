@@ -182,14 +182,13 @@
 
   .emphasis {padding:10px;border-radius:5px;box-shadow: -2px 2px 10px rgba(0,0,0,0.1);}
 
-  @media (max-width: 768px) {
-    .carousel-previous, .carousel-next{height:400px;width:10%;}
-    .carousel-slides{width:80%;}
-  }
-
   a.button:hover { border-bottom: 1px solid transparent; }
 
   .top-spacer {width:100%;height:200px;}
+
+  .cardList {list-style: none;text-align:center;}
+  .cardList li {max-width:100px;width: fit-content;margin-left:10px;margin-right:10px;display: inline-block;}
+  .cardList li img {height:60px;width:auto;}
 
   @media (max-width: 768px) {
     .content{width:100%;padding:0px;margin-bottom:60px;}
