@@ -20,7 +20,7 @@
   <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
 
-    <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/main.css"/>
 </head>
 
 <body>
@@ -42,7 +42,7 @@
 
         <div class="content">
           <div class="full-width-inner content-left">
-            <h3 class="text-purple">Concert Posters ( 2008 )</h3>
+            <h3 class="text-purple">Concert Posters (<time datetime="2008">2008</time> )</h3>
             <p>Concert posters created for the band "Take the Money and Run"</p>
           </div>
         </div>
@@ -160,13 +160,9 @@
       </nav>
 
       <footer id="footer">
-          <!-- place scripts in the footer if needs be
-          <script src="js/scripts.js"></script>
-          -->
-
           <div class="footer-inner">
             <div class="copyright">
-              <span>2018</span> <span class="footerHighlight">&copy; Yuri Brigadir</span></span>
+              <span><time id="displayYear"></time>&nbsp;</span> <span class="footerHighlight">&copy; Yuri Brigadir</span></span>
             </div>
 
             <div class="footerLinks">
@@ -197,8 +193,12 @@
               </a>
             </div>
           </div>
+
+          <!-- place scripts in the footer -->
+
       </footer>
 
+      <script src="../scripts/code.js"></script>
 </body>
 
 </html>
