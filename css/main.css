@@ -49,6 +49,7 @@
 
   .background-purple {background-color:#352154;}
   .text-purple {color:#352154;}
+  .text-white {color:white;}
   .background-orange {background-color:#ff4900;}
   .text-orange {color:#ff4900;}
 
@@ -172,7 +173,7 @@
   .content.headlineDescription {margin-bottom:0px;}
   .headlineDescription .half-width-inner {padding-top: 30vh;height:80vh;}
   .headlineDescription h1 {color:white;}
-  .headlineDescription h2, .headlineDescription h3, .headlineDescription h4, .headlineDescription p{color:rgba(255,255,255,0.8);}
+  .headlineDescription h2, .headlineDescription h3, .headlineDescription h4, .headlineDescription p{color:rgba(255,255,255,0.9);}
   .headlineDescription .highlight {font-weight:bold;}
 
   ul.multilineList {list-style:none;padding:0px 0px 30px 30px;font-family:Tahoma, Geneva, sans-serif;}
