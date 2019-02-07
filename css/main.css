@@ -151,7 +151,7 @@
   img.presentationPic {object-fit:contain;}
 
   .content h1, .content h2 {opacity: 1;}
-  .content h3, .content h4 {opacity: 0.8;}
+  .content h4 {opacity: 0.8;}
   .content p {opacity:0.7;margin-bottom:15px;}
   .content p.minor {color: rgba(0,0,0,0.3);}
 
