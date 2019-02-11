@@ -209,8 +209,11 @@
     .content.headlineDescription .half-width-inner {height:100vh;}
     .content.headlineDescription .half-width-inner:nth-child(2) {padding-top:60px;padding-left:30px;padding-right:30px;}
 
-    .content .half-width-inner.picture {padding:0px;height:auto;}
-    .content .half-width-inner.picture img {width:100%;height:auto;margin:0px;}
+    .content .half-width-inner.picture, .content .half-width-inner.picture.high  {padding:0%;height:auto;}
+    .content .half-width-inner:nth-child(1).picture {padding-right:0%;}
+    .content .half-width-inner:nth-child(2).picture {padding-left:0%;}
+    .content .half-width-inner.picture img, .content .half-width-inner.picture.fitHeight img {width:100%;height:auto;margin:0px;}
+
 
     .content.portfolioPiece {
       padding-top:0px;
