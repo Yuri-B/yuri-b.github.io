@@ -21,10 +21,10 @@
   .subText{font:9px/12px Tahoma, Geneva, sans-serif;font-weight:100;width:100%;}
 
   button {margin-bottom:30px;text-transform:uppercase;outline:none;font-size:15px;cursor:pointer;}
-  button.major {color:white;width:250px;padding:10px;border-radius:5px;background-color:#352154;border:0px solid transparent;}
+  button.major {color:white;width:300px;padding:10px;border-radius:5px;background-color:#352154;border:0px solid transparent;}
   button.major:not(:disabled):hover {box-shadow: inset 3px 3px 0px white;text-shadow: 3px 3px white;color:transparent;text-decoration:none;}
 
-  button.minor {color:#352154;width:150px;padding:10px;border-radius:5px;background-color:transparent;border:1px solid #352154;}
+  button.minor {color:#352154;width:200px;padding:10px;border-radius:5px;background-color:transparent;border:1px solid #352154;}
   button.minor:not(:disabled):hover {box-shadow: inset 3px 3px 0px #352154;text-shadow: 3px 3px #352154;color:transparent;text-decoration:none;}
   button.minor.white {color:rgb(255,255,255);width:150px;padding:10px;border-radius:5px;background-color:transparent;border:1px solid rgb(255,255,255);}
   button.minor.white:not(:disabled):hover {box-shadow: inset 3px 3px 0px rgb(255,255,255);text-shadow: 3px 3px rgb(255,255,255);color:transparent;text-decoration:none;}
