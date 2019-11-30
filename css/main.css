@@ -44,8 +44,8 @@
     height:100px;
     color:rgba(255,255,255,0.8);
   }
-  #header {background-image: linear-gradient(to bottom, rgb(255, 255, 255) , rgb(255, 255, 255),  transparent)}
-  #homePage #header {background-image: none;}
+  #header {background-image: linear-gradient(to bottom, rgb(255, 255, 255) , rgb(255, 255, 255),  transparent);}
+  #homePage #header {background-image: linear-gradient(to bottom, rgba(255, 255, 255,0.2) , rgba(255, 255, 255,0.1));}
 
   .background-purple {background-color:#352154;}
   .text-purple {color:#352154;}
