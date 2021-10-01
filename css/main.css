@@ -26,9 +26,8 @@
 
   button.minor {color:#352154;width:200px;padding:10px;border-radius:5px;background-color:transparent;border:1px solid #352154;}
   button.minor:not(:disabled):hover {box-shadow: inset 3px 3px 0px #352154;text-shadow: 3px 3px #352154;color:transparent;text-decoration:none;}
-  button.minor.white {color:rgb(255,255,255);width:200px;padding:10px;border-radius:5px;background-color:transparent;border:1px solid rgb(255,255,255);}
+  button.minor.white {color:rgb(255,255,255);width:300px;padding:10px;border-radius:5px;background-color:transparent;border:1px solid rgb(255,255,255);}
   button.minor.white:not(:disabled):hover {box-shadow: inset 3px 3px 0px rgb(255,255,255);text-shadow: 3px 3px rgb(255,255,255);color:transparent;text-decoration:none;}
-
 
   button:disabled {color:rgba(0,0,0,0.2);border:1px solid rgba(0,0,0,0.2);}
   button:active {outline:none;}
@@ -173,9 +172,10 @@
   .content.headlineDescription {margin-bottom:0px;}
   .headlineDescription .full-width-inner {padding-top: 30vh;height:80vh;}
   .headlineDescription h1 {color:white;font-size:50px;}
-  .headlineDescription h3 {color:white;font-size:30px;}
+  .headlineDescription h3 {color:white;font-size:20px;}
   .headlineDescription h2, .headlineDescription h3, .headlineDescription h4, .headlineDescription p{color:rgba(255,255,255,0.9);}
   .headlineDescription .highlight {font-weight:bold;}
+  .headlineDescription button {text-align:center;}
 
   ul.multilineList {list-style:none;padding:0px 0px 30px 30px;font-family:Tahoma, Geneva, sans-serif;}
   ul.multilineList li {margin-bottom:30px;}
